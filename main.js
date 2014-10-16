@@ -38,6 +38,11 @@ let policy =
 													(requestOrigin ? requestOrigin.spec : "null") + " " +
 													node + " " +
 													mimeTypeGuess + "\n");
+		// Blocking scripts
+		if (contentType === 2) {
+			console.log("Script is blocked");
+            return Ci.nsIContentPolicy.REJECT;
+        }
 		return Ci.nsIContentPolicy.ACCEPT;
 	},
 
