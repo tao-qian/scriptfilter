@@ -1,0 +1,9 @@
+content   scriptFilter                content/
+
+skin      scriptFilter  classic/1.0   skin/
+style chrome://global/content/customizeToolbar.xul chrome://scriptFilter/skin/browserOverlay.css
+
+locale    scriptFilter  en-US         locale/en-US/
+
+overlay chrome://browser/content/browser.xul  chrome://scriptFilter/content/browserOverlay.xul
+
