@@ -1,0 +1,9 @@
+<!ENTITY scriptFilterTool.label       "Script Filter">
+<!ENTITY scriptFilterTool.secondLabel "Place Holder">
+
+<!ENTITY scriptFilterToolBar.button "Script Filter">
+<!ENTITY scriptFilterToolBar.tip "Place Holder">
+
+<!ENTITY scriptFilterToolBar.buttonToggle "Disable Script">
+<!ENTITY scriptFilterToolBar.buttonToggleWebsite "Disable on [Place Holder]">
+<!ENTITY scriptFilterToolBar.buttonToggleWebPage "Disable this page">

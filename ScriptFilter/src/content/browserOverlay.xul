@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet type="text/css" href="chrome://global/skin/" ?>
+<?xml-stylesheet type="text/css" href="chrome://scriptFilter/skin/browserOverlay.css" ?>
+
+<!DOCTYPE overlay SYSTEM
+  "chrome://scriptFilter/locale/browserOverlay.dtd">
+
+<overlay id="scriptFilter-browser-overlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type="application/x-javascript"
+    src="chrome://scriptFilter/content/browserOverlay.js" />
+  
+  <!--
+    Insert main.js
+    Insert bootstrap.js? -->
+
+  <!--Where the text to find is located-->
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="scriptFilter-string-bundle"
+      src="chrome://scriptFilter/locale/browserOverlay.properties" />
+  </stringbundleset>
+  
+  <!--ToolBar Button -->
+   <toolbarpalette id="BrowserToolbarPalette">
+    <toolbaritem>
+      <toolbarbutton id="scriptFilter-button" label="&scriptFilterToolBar.button;"
+        type = "menu"
+        class="toolbarbutton-1 chromeclass-toolbar-additional"
+        tooltiptext="&scriptFilterToolBar.tip;">
+        <menupopup>
+          <menuitem label= "&scriptFilterToolBar.buttonToggle;"
+          checked = "false"
+          oncommand = "scriptFilterTool.BrowserOverlay.toggleButton(event);"/>
+        </menupopup>
+      </toolbarbutton>
+    </toolbaritem>
+  </toolbarpalette>
+  
+
+</overlay>
